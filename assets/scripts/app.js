@@ -34,6 +34,7 @@ const backdropClickHandler = () => {
 
 const cancelAddMovieHandler = () => {
     closeMovieModal();
+    toggleBackdrop();
     clearMovieInput();
 };
 

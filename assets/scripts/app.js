@@ -61,22 +61,23 @@ const addMovieHandler = () => {
         +ratingValue > 5
     ) {
         alert("Please enter valid values (rating between 1 and 5).");
+    } else {
+
+        const newMovie = {
+            id: Math.random().toString(),
+            title: titleValue,
+            image: imageUrlValue,
+            rating: ratingValue,
+        };
+
+        movies.push(newMovie);
+        console.log(movies);
+        closeMovieModal();
+        toggleBackdrop();
+        clearMovieInput();
+        updateUI();
+        renderNewMovie(newMovie.id, newMovie.title, newMovie.image, newMovie.rating);
     }
-
-    const newMovie = {
-        id: Math.random().toString(),
-        title: titleValue,
-        image: imageUrlValue,
-        rating: ratingValue,
-    };
-
-    movies.push(newMovie);
-    console.log(movies);
-    closeMovieModal();
-    toggleBackdrop();
-    clearMovieInput();
-    updateUI();
-    renderNewMovie(newMovie.id, newMovie.title, newMovie.image, newMovie.rating);
 };
 
 const deleteMovie = movieId => {

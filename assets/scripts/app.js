@@ -89,12 +89,23 @@ const deleteMovie = movieId => {
     }
     movies.splice(movieIndex, 1);
     listRoot.children[movieIndex].remove();
+    closeMovieDeletionModal();
+    updateUI();
 };
 
-const deleteMovieHandler = movieId => {
+const startDeleteMovieHandler = movieId => {
     deleteMovieModal.classList.add("visible");
     toggleBackdrop();
-    //deleteMovie(movieId);
+    const cancelDeletionBtn = deleteMovieModal.querySelector(".btn--passive");
+    let confirmDeletionBtn = deleteMovieModal.querySelector(".btn--danger");
+
+    //Tricky part to "solve" the problem with "too many eventsListeners"
+    confirmDeletionBtn.replaceWith(confirmDeletionBtn.cloneNode(true));
+    confirmDeletionBtn = deleteMovieModal.querySelector(".btn--danger");
+    cancelDeletionBtn.removeEventListener("click", closeMovieDeletionModal);
+
+    cancelDeletionBtn.addEventListener("click", closeMovieDeletionModal);
+    confirmDeletionBtn.addEventListener("click", deleteMovie.bind(null, movieId));
 };
 
 const updateUI = () => {
@@ -116,7 +127,7 @@ const renderNewMovie = (id, title, imageUrl, rating) => {
         <h2>${title}</h2>
         <p>${rating}/5 stars</p>
     </div>`;
-    newMovieElement.addEventListener("click", deleteMovieHandler.bind(null, id));
+    newMovieElement.addEventListener("click", startDeleteMovieHandler.bind(null, id));
     listRoot.append(newMovieElement);
 };
 

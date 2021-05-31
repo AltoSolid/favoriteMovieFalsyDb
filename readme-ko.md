@@ -8,11 +8,11 @@
 [Versión en español]()
 
 ## 결과
-![]()
-![]()
-![]()
-![]()
-![]()
+![img1](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-1.png)
+![img2](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-2.png)
+![imh3](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-3.png)
+![imh4](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-4.png)
+![img5](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-5.png)
 
 ## 사용된 기숳
 

@@ -3,9 +3,9 @@ This simple project was developed to practice JavaScript, HTML and CSS.
 Temporarily stores the information provided. If the page is reloaded, the information is lost. 
 
 ## Language version of readme
-[Versión en español]()
+[Versión en español](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/readme-es.md)
 
-[한국어 버전]()
+[한국어 버전](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/readme-ko.md)
 
 ## Result
 ![img1](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-1.png)

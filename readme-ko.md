@@ -3,9 +3,9 @@
 저공된 정보를 임시로 저장한다. 
 
 ## Readme의 언어 버전
-[English version]()
+[English version](https://github.com/AltoSolid/favoriteMovieFalsyDb)
 
-[Versión en español]()
+[Versión en español](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/readme-es.md)
 
 ## 결과
 ![img1](https://github.com/AltoSolid/favoriteMovieFalsyDb/blob/main/assets/img/img-1.png)
